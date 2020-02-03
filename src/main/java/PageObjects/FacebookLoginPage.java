@@ -19,7 +19,6 @@ public class FacebookLoginPage extends BasePage{
     private WebElement wrongCredentialsAlert;
 
     public String getAlertText(){
-        Waiter.waitUntilAlertIsPresent();
         return wrongCredentialsAlert.getText();
     }
 }

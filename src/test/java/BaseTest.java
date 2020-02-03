@@ -1,9 +1,11 @@
+import Helpers.DriverManager;
 import PageObjects.BasePage;
+import org.junit.After;
 import org.junit.Before;
 
 public class BaseTest {
-    @Before
-    public void driverSetup(){
-        BasePage.getDriver();
+    @After
+    public void closeChrome(){
+        DriverManager.killDriver();
     }
 }
