@@ -8,4 +8,5 @@ public class BaseTest {
     public void closeChrome(){
         DriverManager.killDriver();
     }
+
 }
