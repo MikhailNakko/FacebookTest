@@ -3,7 +3,6 @@ package Helpers;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 
-import java.util.concurrent.TimeUnit;
 
 public class DriverManager {
     private DriverManager() {
