@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 
-public class FacebookLoginPage extends BasePage{
+public class FacebookLoginPage extends BasePage {
     public FacebookLoginPage(WebDriver driver) {
         super(driver);
     }
@@ -18,7 +18,7 @@ public class FacebookLoginPage extends BasePage{
     @FindBy(css = "div[role='alert']")
     private WebElement wrongCredentialsAlert;
 
-    public String getAlertText(){
+    public String getAlertText() {
         return wrongCredentialsAlert.getText();
     }
 }

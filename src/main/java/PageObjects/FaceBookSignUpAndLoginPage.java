@@ -18,7 +18,7 @@ public class FaceBookSignUpAndLoginPage extends BasePage {
 
     private WebElement pass;
 
-    public FacebookLoginPage logIn(String email, String password){
+    public FacebookLoginPage logIn(String email, String password) {
         emailLoginField.sendKeys(email);
         pass.sendKeys(password);
         pass.submit();

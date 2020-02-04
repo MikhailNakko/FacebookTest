@@ -21,18 +21,18 @@ public class GoogleSearchPage extends BasePage {
     @FindBy(xpath = "/html//img[@id='hplogo']")
     private WebElement googleLogo;
 
-    public GoogleSearchPage inputSearch (String searchFor) {
+    public GoogleSearchPage inputSearch(String searchFor) {
         googleSearchField.sendKeys(searchFor);
         return this;
     }
 
-    public GoogleSearchResultPage doSearch(){
+    public GoogleSearchResultPage doSearch() {
         googleLogo.click();
         doSearchButton.click();
         return new GoogleSearchResultPage(driver);
     }
 
-    public GoogleSearchPage openWebPage(){
+    public GoogleSearchPage openWebPage() {
         driver.get(googleURL);
         return this;
     }
