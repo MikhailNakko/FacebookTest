@@ -18,7 +18,8 @@ public class InvalidCredentialsTest extends BaseTest {
                         .goToFacebookPage()
                         .logIn("veryverybademail", "badpass")
                         .getAlertText();
-        Assert.assertEquals("The email or phone number you’ve entered doesn’t match any account. Sign up for an account.", alertMessageText);
+        Assert.assertEquals("The email or phone number you’ve entered doesn’t match any account. " +
+                "Sign up for an account.", alertMessageText);
     }
 
 }
